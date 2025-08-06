@@ -1,10 +1,9 @@
 package main
 
 import (
-	"GoL2/ntp_time"
-	"fmt"
+	"GoL2/unpacking"
 )
 
 func main() {
-	fmt.Println(ntp_time.CurrentTime())
+	unpacking.TestAll()
 }

@@ -1,4 +1,4 @@
-package main
+package ntp_time
 
 import (
 	"fmt"
