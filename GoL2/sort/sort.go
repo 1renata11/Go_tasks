@@ -39,6 +39,7 @@ func main() {
 	}
 }
 
+//Функция, читающая флаги
 func ReadArgs(args *[]string) {
 	for i := 0; i < len(*args); i++ {
 		arg := (*args)[i]
@@ -87,6 +88,7 @@ func ReadArgs(args *[]string) {
 	}
 }
 
+//Функция, читающая строки из STDIN или файла
 func ReadLines(files *[]string, lines *[]string) {
 	switch len(*files) {
 	case 0:
@@ -109,6 +111,7 @@ func ReadLines(files *[]string, lines *[]string) {
 	}
 }
 
+//Функция, сортирующая строки
 func Sort(lines *[]string) {
 	if unique && len(*lines) > 0 {
 		var uniqueLines []string

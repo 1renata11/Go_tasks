@@ -5,6 +5,7 @@ import (
 	"sort"
 )
 
+//Функция, сортирующая строки
 func sortRunes(s string) string {
 	runes := []rune(s)
 	sort.Slice(runes, func(i, j int) bool {
@@ -13,6 +14,7 @@ func sortRunes(s string) string {
 	return string(runes)
 }
 
+//Функция, получающая на вход список строк, на выходе выводит словарь анаграмм
 func anagram(list *[]string) map[string][]string {
 	anagramMap := make(map[string][]string)
 	for i := 0; i < len(*list); i++ {
