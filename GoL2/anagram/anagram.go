@@ -32,6 +32,10 @@ func anagram(list *[]string) map[string][]string {
 }
 
 func main() {
-	list := []string{"пятак", "пятка", "тяпка", "листок", "слиток", "столик", "стол"}
-	fmt.Println(anagram(&list))
+	list1 := []string{"пятак", "пятка", "тяпка", "листок", "слиток", "столик", "стол"}
+	list2 := []string{}
+	list3 := []string{"пятак", "листок"}
+	fmt.Println(anagram(&list1))
+	fmt.Println(anagram(&list2))
+	fmt.Println(anagram(&list3))
 }
