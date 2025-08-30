@@ -1,0 +1,6 @@
+apple,banana,cherry,dates
+dog,cat,mouse,elephant
+1,2,3,4,5
+hello world
+foo,bar
+one;two;three;four
