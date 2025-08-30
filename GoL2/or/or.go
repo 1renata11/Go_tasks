@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+//Функция, рекурсивно объединяющая каналы
 func or(channels ...<-chan interface{}) <-chan interface{} {
 	out := make(chan interface{})
 	if len(channels) == 0 {
